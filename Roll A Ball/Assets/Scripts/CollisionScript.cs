@@ -7,6 +7,7 @@ public class CollisionScript : MonoBehaviour
     public MovementScript movementScript;
     public GameObject LostCanvas;
     public GameManager gameManager;
+    public GameObject Player;
     
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,8 @@ public class CollisionScript : MonoBehaviour
        if(collision.transform.tag=="Enemy")
         {
             movementScript.enabled = false;
-            gameManager.LostGame();
+            Player.GetComponent<Rigidbody>().isKinematic = true;
+             gameManager.LostGame();
             
             
         }

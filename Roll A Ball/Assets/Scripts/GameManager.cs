@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public bool lostGame = false;
     public GameObject LostCanvas;
+    public GameObject winningCanvs;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +30,6 @@ public class GameManager : MonoBehaviour
 
         }
     }
+
  
 }
