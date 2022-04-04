@@ -25,12 +25,12 @@ public class DestroyerScript : MonoBehaviour
         if(other.GetComponent<TrapMovementScript>())
         {
             Destroy(other.gameObject);
-            print("Trap destroyed");
+           
         }
         if(other.CompareTag("Enemy"))
         {
             Destroy(other.gameObject);
-            print("enemy destroyed");
+            
         }
     }
 

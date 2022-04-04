@@ -320,4 +320,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentlyMovingRight: 0
-  movementSpeed: 5
+  movementSpeed: 6.2

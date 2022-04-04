@@ -9,6 +9,7 @@ public class CollisionScript : MonoBehaviour
     public GameManager gameManager;
     public GameObject Player;
     
+    
     // Start is called before the first frame update
     void Start()
     {
