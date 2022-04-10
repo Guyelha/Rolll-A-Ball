@@ -22,6 +22,7 @@ public class CollisionScript : MonoBehaviour
             movementScript.enabled = false;
             Player.GetComponent<Rigidbody>().isKinematic = true;
              gameManager.LostGame();
+           
             
             
         }

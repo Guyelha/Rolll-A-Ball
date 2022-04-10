@@ -18,6 +18,6 @@ public class LostCanvas : MonoBehaviour
     }
      public void RestartGame()
     {
-        SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

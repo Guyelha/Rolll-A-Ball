@@ -6,7 +6,8 @@ public class FinishLineScript : MonoBehaviour
 {
     public GameObject Player;
     public MovementScript movementScript;
-    
+    public GameManager gameManager;
+    public GameObject winningCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,8 @@ public class FinishLineScript : MonoBehaviour
         {
             movementScript.enabled = false;
             Player.GetComponent<Rigidbody>().isKinematic = true;
+            gameManager.WonGame();
+            print("won game");   
            
         }
     }

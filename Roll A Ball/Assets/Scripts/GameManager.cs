@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     
     public bool lostGame = false;
     public GameObject LostCanvas;
+    public GameObject WinningCanvas;
+    public bool wonGame = false;
+    
     
     
 
@@ -29,7 +32,17 @@ public class GameManager : MonoBehaviour
         {
             lostGame = true;
             LostCanvas.SetActive(true);
+          
 
+        }
+    }
+
+    public void WonGame()
+    {
+        if(!wonGame)
+        {
+            wonGame = true;
+            WinningCanvas.SetActive(true);
         }
     }
 
