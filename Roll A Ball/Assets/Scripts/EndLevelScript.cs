@@ -15,4 +15,9 @@ public class EndLevelScript : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("won");
+    }
 }

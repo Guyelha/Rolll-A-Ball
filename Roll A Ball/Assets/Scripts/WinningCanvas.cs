@@ -8,7 +8,7 @@ public class WinningCanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("NextLevel", 1);
     }
 
     // Update is called once per frame
@@ -17,8 +17,14 @@ public class WinningCanvas : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+      
+
+    }
+
     public void NextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+     
     }
 }

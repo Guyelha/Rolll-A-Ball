@@ -7,6 +7,7 @@ public class MovementScript : MonoBehaviour
     public float forwardSpeed = 1000;
     public float sideSpeed = 500;
     Rigidbody rb;
+
     public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
